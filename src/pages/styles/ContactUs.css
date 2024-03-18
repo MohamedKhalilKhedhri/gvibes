@@ -1,0 +1,11 @@
+
+@media only screen and (max-width:500px) {
+    .contactUs-links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+     
+    }
+    
+}

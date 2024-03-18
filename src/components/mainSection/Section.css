@@ -1,0 +1,47 @@
+.mainsection{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainsection img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.img-darker{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.375);
+}
+.sectiontext{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.sectiontxt{
+    font-family: "Kaushan Script", cursive;
+    font-size: 40px;
+}
+
+@media only screen and (max-width:800px) {
+    .mainsection{
+     height: 337px;
+    }
+    .sectiontxt{
+        font-size: 20px;
+    }
+    .sectiontext{
+        gap: 5px;
+    }
+ }

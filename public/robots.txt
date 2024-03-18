@@ -1,0 +1,11 @@
+User-agent: *
+
+# Allow crawling of all website pages:
+Allow: /
+
+# Disallow crawling of non-public assets and components:
+Disallow: /assets/
+Disallow: /components/
+Disallow: /context/
+Disallow: /Firebase/
+Disallow: /pages/styles/

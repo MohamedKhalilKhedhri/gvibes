@@ -1,0 +1,40 @@
+.gallery{
+    columns: 3;
+    padding: 50px;
+    column-gap: 15px;
+    width: 100%;
+    
+   
+}
+.infinitS{
+    text-align: center;
+}
+
+.gallery .media{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    break-inside: avoid;
+    cursor: pointer;
+    transition: .4s ease-out;
+
+}
+.pop{
+    position: relative;
+    z-index: 10000;
+}
+.gallery .media:hover{
+    transform: scale(1.02);
+}
+@media only screen and (max-width:1024px) {
+    .gallery{
+     columns: 2;
+     padding: 40px;
+    }
+ }
+@media only screen and (max-width:500px) {
+   .gallery{
+    
+    padding: 10px;
+   }
+}

@@ -1,0 +1,85 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 30px;
+    z-index: 9999; /* Higher z-index to keep navbar above content */
+    overflow: hidden;
+    transition: .4s ease-in-out;
+}
+.navbar img{
+  width: 70px;
+
+ 
+    
+}
+.closenav{ display: none ;}
+.navbar ul{
+  font-family: "Kaushan Script", cursive;
+    display: flex;
+    gap: 20px;
+  
+ 
+}
+
+.navbar ul li .link{
+    padding: 10px 20px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+   
+}
+.navbar ul li .link:hover{
+  color: darkorange;
+}
+.darkbtn{
+    display: block;
+    width: 25px;
+    height: 25px;
+
+    
+}
+.modeimg{
+    
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+@media only screen and (max-width:1280px) {
+    .nlogo{display: none;}
+}
+@media only screen and (max-width:1024px) {
+    .nlogo{display: block;}
+  .navbar{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .navbar ul{
+
+ flex-direction: column;
+  
+  }
+  .closenav{ 
+    display: block;
+    position: fixed;
+    top: 24px;
+    right: 40px;
+    z-index: 3000;
+    
+     width: 30px;
+     height: 30px;
+    display: flex;flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+
+
+}
+
+}
